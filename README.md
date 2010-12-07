@@ -3,6 +3,12 @@ Description
 
 Modules used on my server for providing some fun automation and what not, includes tweaks to the included JSApi js files like setTimeout support.
 
+Requirements
+============
+
+* [hMod](http://forum.hey0.net/)
+* [ScriptingApi](https://github.com/alecgorge/ScriptingApi) (Formally JSApi)
+
 Current commands:
 =================
 
