@@ -54,10 +54,18 @@ UndoProviderSingleton.prototype = {
 		}
 		
 		if(args["help"]) {
-			this.printHelp();
+			this.printHelp(player);
 		}
 	},
-	printHelp:function() {
+	printHelp:function(player) {
+		player.sendMessage(Color.Red + "Usage for Undo: *\n"
+		 +"* Usage:\n"
+		 +"* 		Users type /undo ls to see a list of stored undoable actions\n"
+		 +"*		Users type /undo <undoActionKey> to undo a whole particular action\n"
+		 +"*		Users type /undo <undoActionKey> (--step or -s) <numberOfSteps>\n"
+		 +"*\n"
+		 +"* Tools that wish to use it will be able to access UndoProvider.pushUndo(...)\n"
+		 +"UndoProvider is unfinished.");
 	},
 	pushUndo:function(player,actionKey,/*UndoPiece*/undoStep) {
 	},
