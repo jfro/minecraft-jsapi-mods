@@ -5,10 +5,6 @@
  * 	Date Created: 2010-11-22
  *
  */
-function fb_parseInt(s) {
-	return parseInt(s,10);
-}
-
 var tbm_borers = {
 	playerToBorer:{},
 	borerToPlayer:{},

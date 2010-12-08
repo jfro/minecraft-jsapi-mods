@@ -13,7 +13,10 @@ function printAPIs() {
 	printOneAPI("mcServer",Api.mcServer);
 	printOneAPI("BlockBuilder",new BlockBuilder());
 }
-//printAPIs();
+function fb_parseInt(s) {
+	return parseInt(s,10);
+}
+
 Api.onCommand(function (player, split) {
 	if(split[0] == "/tunnel" && player.canUseCommand("/tunnel")) {
 		var command = split[0].substring(1);
