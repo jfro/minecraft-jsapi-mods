@@ -1,3 +1,4 @@
+/*
 Description
 ===========
 
@@ -17,3 +18,5 @@ Current commands:
 * /flatten - flattens an area of terrain
 
 *Note*: This repo will update the mc server upon push, try to push when you have working code :)
+
+*/
