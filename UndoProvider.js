@@ -20,7 +20,7 @@ var UndoProvider;
  *
  * Tools that wish to use it will be able to access UndoProvider.pushUndo(...)
  */
- If they give a unique key, then the user will be able 
+
 
 Api.onCommand(function (player, split) {
 	if(split[0] == "/undo" && player.canUseCommand("/undo")) {
