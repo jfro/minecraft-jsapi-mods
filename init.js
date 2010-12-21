@@ -281,6 +281,7 @@ var SetTimeoutRunTimers = function() {
 	}
 };
 
+//Custom SetTimeout
 //if(typeof(setTimeout) != "function") {
 	SetTimeoutCustom = true;
 	Api.log.info("Setting Custom SetTimeout");
@@ -338,7 +339,7 @@ var SetTimeoutRunTimers = function() {
 
 	setTimeout.uidGenerator = 0;
 	
-	//Api Hooks:
+	//TimerTick Api Hooks:
 	
 	Api.onPlayerMove(SetTimeoutRunTimers);
 	Api.onTeleport(SetTimeoutRunTimers);
@@ -361,7 +362,4 @@ var SetTimeoutRunTimers = function() {
 	Api.onSendComplexBlock(SetTimeoutRunTimers);
 
 //}
-/*setTimeout(function(){
-	Api.log.info("Timeout Test Success");
-	Api.log.info(typeof(Api.server.setBlockAt));
-},1000);*/
+

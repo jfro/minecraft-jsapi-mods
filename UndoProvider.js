@@ -40,9 +40,12 @@ Api.onCommand(function (player, split) {
 
 //TODO: think about upperlimits for the memory usage, autopurging of the undo stacks.
 
-function UndoPiece(numBlocks,blocksArr){
+function UndoPiece(){
 	this.timestamp = new Date();
 }
+UndoPiece.prototype = {
+
+};
 
 function UndoProviderSingleton() {
 	this.undostack = {};
@@ -73,7 +76,7 @@ UndoProviderSingleton.prototype = {
 	},
 	undoPlayer:function(player) {
 	},
-	undoSubPiece:function(player,actionKey,numberOfUndos) {
+	undoPieces:function(player,actionKey,numberOfUndos) {
 	},
 	undoWholeAction:function(player,actionKey) {
 	},
